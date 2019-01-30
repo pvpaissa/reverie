@@ -28,9 +28,16 @@ button:focus {
 }
 
 .bg-apply {
-  padding: 1rem 1rem 2rem;
   background: rgba(170, 118, 251, .5);
-  background: linear-gradient(to right, rgba(185, 105, 200, .6), rgba(170, 118, 251, .3));
+  background: linear-gradient(to left, rgba(100, 65, 164, .6), rgba(170, 118, 251, .3));
+}
+
+.border-primary {
+  border-color: rgb(225, 66, 212) !important;
+
+  a {
+    color: rgb(100, 65, 164);
+  }
 }
 
 .btn-reverie {
@@ -65,7 +72,8 @@ button:focus {
   }
 
   a:hover,
-  a:focus {
+  a:focus,
+  a.active {
     color: rgb(225, 66, 212);
   }
 
@@ -270,3 +278,5 @@ button:focus {
     }
   }
 }
+
+/* That's cap. */

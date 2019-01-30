@@ -74,7 +74,7 @@ class Contact extends ComponentBase
                 $message->to($this->property('contactEmail'), $this->property('contactName'));
             });
 
-            Flash::success('Message was sent to Team Reverie.');
+            return Redirect::to('/reverie/thanks');
         }
         catch (Exception $ex) {
             Flash::error($ex->getMessage());
